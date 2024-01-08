@@ -1,0 +1,33 @@
+#include<stdio.h>
+ 
+int main()
+ 
+{
+ 
+	int a, num;
+ 
+	num=0;
+ 
+	scanf("%d",&a);
+ 
+	for(int i=1;i<=a;i++)
+ 
+	{
+ 
+		if(a%i==0)                              //判断i是否为a的因子 
+ 
+		num++;                                  //对因子个数进行计次 
+ 
+	}
+ 
+	if(num==2)                                  //如果只有两个因子，则为素数 
+ 
+	printf("prime");
+ 
+	else
+ 
+	printf("not prime");
+ 
+	return 0;
+ 
+} 
